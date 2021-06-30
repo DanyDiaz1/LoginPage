@@ -5,7 +5,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(#6a15a3,#3f37c0);
+    background: linear-gradient(#2da315,#c03737);
 }
 
 .box{
@@ -14,43 +14,64 @@ body{
     padding: 30px;
     background: rgba(0,0,0,.5);
     border-radius: 10px;
-    
+
 }
 
 .box h2{
     margin: 0 0 30px;
     padding: 0;
-    font-size: 30px;
-    color: #4cc9f0;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
 }
 
 .box .elemento label{
-    color: #fff;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .box .elemento input{
+    outline: none;
     width: 100%;
     padding: 10px 5px;
     color: #fff;
+    border-radius: 15px;
     background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
     margin-bottom: 30px;
+    margin-top: 5px;
 }
 
+.box .elemento input:hover{
+    background: linear-gradient(rgba(0,0,0,0),rgb(95, 79, 79));
+}
+
+.box .elemento input:focus{
+    background: linear-gradient(rgba(0,0,0,0),rgb(95, 79, 79));
+}
+
+
+
 .box .elemento input[type="submit"]{
-    background-color: #f72585;
+    background:black;
+    color: white;
     border: none;
     border-radius: 15px;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     cursor: pointer;
     padding: 15px;
     margin-top: 30px;
 }
 
+.box .elemento input[type="submit"]:hover{
+    background:#fff;
+    color: black
+}
 
-
-
+.box .elemento input[type="submit"]:active{
+    background:black;
+}
